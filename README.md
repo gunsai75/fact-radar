@@ -1,3 +1,4 @@
-# ResQ Route - Facilitating Rapid Ambulance Response
-🚦⛑️🚑🍃💨
+# Fact Radar
+
+News 📰 Newbe 📰❔ or Newsbenot 📰❌ 
 
