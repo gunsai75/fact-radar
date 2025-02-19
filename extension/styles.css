@@ -18,6 +18,11 @@ body {
     cursor: pointer;
     width: 200px;
     transition: 1s ease-out;
+    
+  }
+  #newsInput{
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   #result {
@@ -25,7 +30,7 @@ body {
     font-size: 14px;
   }
 
-  button:hover{
+  button:active{
     background-color: #006adb;
-    scale: 1.2;
+    scale: 0.5;
   }
