@@ -1,0 +1,105 @@
+// popup.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Article Analyzer</title>
+  <style>
+    /* Add this to the <style> section in your popup.html */
+body {
+    width: 300px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #3367d6;
+  }
+  
+  #status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .result {
+    margin-top: 15px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  /* When article is predicted REAL */
+  .result-high-confidence {
+    background-color: #e6f4ea;
+    border: 1px solid #34a853;
+    color: #0d652d;
+  }
+  
+  .result-medium-confidence {
+    background-color: #fef7e0;
+    border: 1px solid #fbbc04;
+    color: #964b00;
+  }
+  
+  .result-low-confidence {
+    background-color: #fce8e6;
+    border: 1px solid #ea4335;
+    color: #b31412;
+  }
+  
+  /* When article is predicted FAKE */
+  .result-high-risk {
+    background-color: #fce8e6;
+    border: 1px solid #ea4335;
+    color: #b31412;
+  }
+  
+  .result-medium-risk {
+    background-color: #fef7e0;
+    border: 1px solid #fbbc04;
+    color: #964b00;
+  }
+  
+  .result-low-risk {
+    background-color: #e6f4ea;
+    border: 1px solid #34a853;
+    color: #0d652d;
+  }
+  
+  .result-header {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .confidence-level {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  
+  .score {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  </style>
+</head>
+<body>
+  <h2>News Article Analyzer</h2>
+  <p>Extract the current news article and check its credibility.</p>
+  <button id="extractButton">Analyze Current Article</button>
+  <div id="status"></div>
+  <div id="result" class="result" style="display:none;"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
